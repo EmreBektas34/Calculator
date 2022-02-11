@@ -11,7 +11,7 @@
         <Frame Margin="10,0,10,0" Padding="0,0,0,0" CornerRadius="20" HasShadow="True" BorderColor="#2597ce">
         <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand" HeightRequest="150" MinimumHeightRequest="150" Margin="0,0,0,0" BackgroundColor="Transparent" Orientation="Horizontal">
                 <controls:CustomEntry VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="150" MinimumHeightRequest="150" HorizontalTextAlignment="End"/>
-                <Button Text="Sil" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20"  FontSize="30" Margin="0,5,5,5" TextTransform="None"/>
+                <Button Text="Del" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20"  FontSize="30" Margin="0,5,5,5" TextTransform="None"/>
             </StackLayout>            
         </Frame>
         <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Margin="10,0,10,0" Padding="0,0,0,0">
