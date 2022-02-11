@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Calculator.CustomRenderers"
+             x:Class="Calculator.MainPage">
+
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" Padding="10,0,10,0">
+        <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand" HeightRequest="25" MinimumHeightRequest="25" BackgroundColor="Transparent">
+            <Label Text="Calculator v1.0.0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+        <Frame Margin="10,0,10,0" Padding="0,0,0,0" CornerRadius="20" HasShadow="True" BorderColor="#2597ce">
+        <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand" HeightRequest="150" MinimumHeightRequest="150" Margin="0,0,0,0" BackgroundColor="Transparent" Orientation="Horizontal">
+                <controls:CustomEntry VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="150" MinimumHeightRequest="150" HorizontalTextAlignment="End"/>
+                <Button Text="Sil" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20"  FontSize="30" Margin="0,5,5,5" TextTransform="None"/>
+            </StackLayout>            
+        </Frame>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Margin="10,0,10,0" Padding="0,0,0,0">
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Horizontal" BackgroundColor="Transparent">
+                <Button Text="+" TextTransform="None" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button Text="-" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Horizontal" BackgroundColor="Transparent">
+                <Button Text="x" TextTransform="None"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button Text="/" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Horizontal" BackgroundColor="Transparent">
+                <Button Text="7" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button Text="8" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button Text="9" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Horizontal" BackgroundColor="Transparent">
+                <Button Text="4" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button Text="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button Text="6" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Horizontal" BackgroundColor="Transparent">
+                <Button Text="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button Text="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button Text="3" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Horizontal" BackgroundColor="Transparent">
+                <Button Text="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button Text="." VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,10" Orientation="Horizontal" BackgroundColor="Transparent">
+                <Button Text="=" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
