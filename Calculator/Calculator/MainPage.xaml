@@ -10,41 +10,41 @@
         </StackLayout>
         <Frame Margin="10,0,10,0" Padding="0,0,0,0" CornerRadius="20" HasShadow="True" BorderColor="#2597ce">
         <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand" HeightRequest="150" MinimumHeightRequest="150" Margin="0,0,0,0" BackgroundColor="Transparent" Orientation="Horizontal">
-                <controls:CustomEntry VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="150" MinimumHeightRequest="150" HorizontalTextAlignment="End"/>
-                <Button Text="Del" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20"  FontSize="30" Margin="0,5,5,5" TextTransform="None"/>
+                <controls:CustomEntry x:Name="EntryValue" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="150" MinimumHeightRequest="150" HorizontalTextAlignment="End" FontSize="30"/>
+                <Button x:Name="Del" Clicked="Del_Clicked" Text="Del" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20"  FontSize="30" Margin="0,5,5,5" TextTransform="None"/>
             </StackLayout>            
         </Frame>
         <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Margin="10,0,10,0" Padding="0,0,0,0">
             <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Horizontal" BackgroundColor="Transparent">
-                <Button Text="+" TextTransform="None" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
-                <Button Text="-" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Plus" Clicked="Plus_Clicked" Text="+" TextTransform="None" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Minus" Clicked="Minus_Clicked" Text="-" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
             </StackLayout>
             <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Horizontal" BackgroundColor="Transparent">
-                <Button Text="x" TextTransform="None"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
-                <Button Text="/" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Cross" Clicked="Cross_Clicked" Text="x" TextTransform="None"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Slash" Clicked="Slash_Clicked" Text="/" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
 
             </StackLayout>
             <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Horizontal" BackgroundColor="Transparent">
-                <Button Text="7" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
-                <Button Text="8" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
-                <Button Text="9" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Seven" Clicked="Seven_Clicked" Text="7" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Eight" Clicked="Eight_Clicked" Text="8" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Nine" Clicked="Nine_Clicked" Text="9" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
             </StackLayout>
             <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Horizontal" BackgroundColor="Transparent">
-                <Button Text="4" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
-                <Button Text="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
-                <Button Text="6" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Four" Clicked="Four_Clicked" Text="4" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Five" Clicked="Five_Clicked" Text="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Six" Clicked="Six_Clicked" Text="6" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
             </StackLayout>
             <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Horizontal" BackgroundColor="Transparent">
-                <Button Text="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
-                <Button Text="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
-                <Button Text="3" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="One" Clicked="One_Clicked" Text="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Two" Clicked="Two_Clicked" Text="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Three" Clicked="Three_Clicked" Text="3" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
             </StackLayout>
             <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Horizontal" BackgroundColor="Transparent">
-                <Button Text="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
-                <Button Text="." VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Zero" Clicked="Zero_Clicked" Text="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Dot" Clicked="Dot_Clicked" Text="." VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" BorderColor="#2597ce" BorderWidth="1" TextColor="Black" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
             </StackLayout>
             <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,0,10" Orientation="Horizontal" BackgroundColor="Transparent">
-                <Button Text="=" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
+                <Button x:Name="Equals" Clicked="Equals_Clicked" Text="=" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#2597ce" BorderColor="#2597ce" BorderWidth="1" TextColor="White" CornerRadius="20" Margin="0,0,0,0" FontSize="30"/>
             </StackLayout>
         </StackLayout>
     </StackLayout>
